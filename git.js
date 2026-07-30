@@ -22,7 +22,7 @@
 
 // git status -> U,A,M
 // git add <file_path>   // staging area
-// git add .
+// git add
 // git commit -m "<commit_message>"
 
 // git log
@@ -46,3 +46,49 @@
 // diff
 // git diff scope..main
 // git diff --name-only scope..main
+
+// todo: stash, revert, reset, rebase, cherry-pick
+
+// git stash -m "stash message"
+// git stash pop
+// git stash apply stash@{n} 
+// git stash drop stash@{n}
+// git stash clear
+
+
+// revert
+// a -> b -> c -> d -> e
+// a -> b -> c -> d -> e -> d'
+
+// reset
+// a -> b -> c -> d -> e
+// a -> b -> c -> d
+
+
+// reset
+// git reset <commit_id>
+// git reset Head~n => 1 // default mixed
+// options
+// --soft
+// git reset --soft Head~n => 1 -> staged
+// --mixed
+// git reset --mixed Head~n => 1 -> wd
+// --hard
+// git reset --hard Head~n => 1 -> delete
+
+// revert
+// git revert <commit_id>
+// git revert Head~n => n=1,2,..
+
+// main a -> b -> c
+// feature e -> f -> g
+// git cherry pick g  -> a -> b -> c -> g
+
+// git rebase main
+// main a -> b -> c
+// feature e -> f -> g
+
+// todo: git pull, git fetch, git clone
+
+// gitHub
+// pull request
